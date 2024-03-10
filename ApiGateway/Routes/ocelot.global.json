@@ -1,0 +1,34 @@
+{
+  "GlobalConfiguration": {
+    //"RequestIdKey": ""
+    "BaseUrl": "https://localhost:7056"
+    //"RequestIdKey": "x-correlation-id",
+    //"UseServiceDiscovery": true,
+    //"DownstreamScheme": "http"
+  },
+  "RateLimitOptions": {
+    "ClientWhitelist": [],
+    "EnableRateLimiting": true,
+    "Period": "1s",
+    "HttpStatusCode": 428,
+    "QuotaExceededMessage": "Too many requests...",
+    "PeriodTimespan": 1,
+    "Limit": 1
+  },
+
+  "HttpHandlerOptions": {
+    "UseTracing": true
+  },
+
+  "LoadBalancerOptions": {
+    "Type": "LeastConnection",
+    "Key": null,
+    "Expiry": 0
+  },
+
+  "QoSOptions": {
+    "ExceptionsAllowedBeforeBreaking": 3,
+    "DurationOfBreak": 10000,
+    "TimeoutValue": 5000
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/productservice/Product/GeAllProducts",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7125
+        }
+      ],
+      "UpstreamPathTemplate": "/api/productservices/Product/GeAllProducts",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "Key": "GeAllProducts",
+      "SwaggerKey": "productservice"
+    },
+    {
+      "DownstreamPathTemplate": "/api/productservice/Product/Laura",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7125
+        }
+      ],
+      "UpstreamPathTemplate": "/api/productservices/Product/Laura",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "Key": "Laura",
+      "SwaggerKey": "productservice"
+    },
+    {
+      "DownstreamPathTemplate": "/api/productservice/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7125
+        }
+      ],
+      "UpstreamPathTemplate": "/api/productservice/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "SwaggerKey": "productservice"
+    }
+  ]
+}

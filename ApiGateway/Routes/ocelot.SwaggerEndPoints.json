@@ -1,0 +1,24 @@
+{
+  "SwaggerEndPoints": [
+    {
+      "Key": "orderservice",
+      "Config": [
+        {
+          "Name": "Order API",
+          "version": "v1",
+          "Url": "https://localhost:7028/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "productservice",
+      "Config": [
+        {
+          "Name": "Product API",
+          "version": "v1",
+          "Url": "https://localhost:7125/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}

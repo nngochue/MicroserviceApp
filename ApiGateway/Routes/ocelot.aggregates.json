@@ -1,0 +1,14 @@
+{
+  "Aggregates": [
+    {
+      "UpstreamPathTemplate": "/TomAndLaura",
+      "RouteKeys": [ "Tom", "Laura" ],
+      //"Aggregator": "FakeDefinedAggregator"
+    },
+    {
+      "UpstreamPathTemplate": "/ProductOrder",
+      "RouteKeys": [ "GeAllProducts", "GeAllOrders" ],
+      "Aggregator": "FakeDefinedAggregator"
+    }
+  ]
+}

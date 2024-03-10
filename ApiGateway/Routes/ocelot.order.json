@@ -1,0 +1,50 @@
+{
+  "Routes": [
+
+    {
+      "DownstreamPathTemplate": "/api/orderservice/Order/Tom",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7028
+        }
+      ],
+      "UpstreamPathTemplate": "/api/orderservices/Order/Tom",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "Key": "Tom",
+      "SwaggerKey": "orderservice"
+    },
+    {
+      "DownstreamPathTemplate": "/api/orderservice/Order/GeAllOrders",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7028
+        }
+      ],
+      "UpstreamPathTemplate": "/api/orderservices/Order/GeAllOrders",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "Key": "GeAllOrders",
+      "SwaggerKey": "orderservice",
+      "Priority": 1
+    },
+    {
+      "DownstreamPathTemplate": "/api/orderservice/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7028
+        }
+      ],
+      "UpstreamPathTemplate": "/api/orderservice/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "SwaggerKey": "orderservice",
+      "Priority": 0
+    },
+
+   
+  ]
+}
