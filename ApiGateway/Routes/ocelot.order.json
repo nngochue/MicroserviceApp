@@ -10,7 +10,7 @@
           "Port": 7028
         }
       ],
-      "UpstreamPathTemplate": "/api/orderservices/Order/Tom",
+      "UpstreamPathTemplate": "/api/orderservice/Order/Tom",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
       "Key": "Tom",
       "SwaggerKey": "orderservice"
@@ -24,7 +24,7 @@
           "Port": 7028
         }
       ],
-      "UpstreamPathTemplate": "/api/orderservices/Order/GeAllOrders",
+      "UpstreamPathTemplate": "/api/orderservice/Order/GeAllOrders",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
       "Key": "GeAllOrders",
       "SwaggerKey": "orderservice",
