@@ -9,7 +9,7 @@
           "Port": 7125
         }
       ],
-      "UpstreamPathTemplate": "/api/productservices/Product/GeAllProducts",
+      "UpstreamPathTemplate": "/api/productservice/Product/GeAllProducts",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
       "Key": "GeAllProducts",
       "SwaggerKey": "productservice"
@@ -23,7 +23,7 @@
           "Port": 7125
         }
       ],
-      "UpstreamPathTemplate": "/api/productservices/Product/Laura",
+      "UpstreamPathTemplate": "/api/productservice/Product/Laura",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
       "Key": "Laura",
       "SwaggerKey": "productservice"
